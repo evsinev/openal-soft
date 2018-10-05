@@ -10,79 +10,9 @@ jobs:
           name: Build
           command: bash ./build-osx.sh
 
-  build901:
-    macos:
-      xcode: "9.0.1"
-    steps:
-      - checkout
-      - run:
-          name: Build
-          command: bash ./build-osx.sh
-
-  build910:
-    macos:
-      xcode: "9.1.0"
-    steps:
-      - checkout
-      - run:
-          name: Build
-          command: bash ./build-osx.sh
-
-  build920:
-    macos:
-      xcode: "9.2.0"
-    steps:
-      - checkout
-      - run:
-          name: Build
-          command: bash ./build-osx.sh
-
-  build930:
-    macos:
-      xcode: "9.3.0"
-    steps:
-      - checkout
-      - run:
-          name: Build
-          command: bash ./build-osx.sh
-
-  build931:
-    macos:
-      xcode: "9.3.1"
-    steps:
-      - checkout
-      - run:
-          name: Build
-          command: bash ./build-osx.sh
-
-  build940:
-    macos:
-      xcode: "9.4.0"
-    steps:
-      - checkout
-      - run:
-          name: Build
-          command: bash ./build-osx.sh
-
-  build941:
-    macos:
-      xcode: "9.4.1"
-    steps:
-      - checkout
-      - run:
-          name: Build
-          command: bash ./build-osx.sh
-
 
 workflows:
   version: 2
   build_and_test:
     jobs:
       - build1000
-      - build901
-      - build910
-      - build920
-      - build930
-      - build931
-      - build940
-      - build941
